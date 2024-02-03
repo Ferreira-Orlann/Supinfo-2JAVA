@@ -1,4 +1,6 @@
 package com.supinfo.store.inventory;
 
-public class InventoryController {
+import com.supinfo.common.even.DefaultEventProducer;
+
+public class InventoryController extends DefaultEventProducer<InventoryEventListener> {
 }

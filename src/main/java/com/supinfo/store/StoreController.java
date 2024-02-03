@@ -1,5 +1,7 @@
 package com.supinfo.store;
 
-public class StoreController {
+import com.supinfo.common.even.DefaultEventProducer;
+
+public class StoreController extends DefaultEventProducer<StoreEventListener> {
     
 }
