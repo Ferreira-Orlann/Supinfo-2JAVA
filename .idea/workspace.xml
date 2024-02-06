@@ -4,13 +4,15 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="a269060a-8bca-425b-b9ff-7d5445c1d082" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/supinfo/Loginpage.form" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/supinfo/Loginpage.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/supinfo/Registerpage.form" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/supinfo/Registerpage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/gradle.xml" afterDir="false" />
+    <list default="true" id="a269060a-8bca-425b-b9ff-7d5445c1d082" name="Changes" comment=":sparkles: Add Item, Inventory, Store with DataClass, Model and Controller">
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/supinfo/common/even/DefaultEventProducer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/supinfo/common/even/EventListener.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/supinfo/common/even/EventProducer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/supinfo/store/inventory/InventoryEventListener.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/supinfo/store/item/ItemEventListener.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/supinfo/store/inventory/InventoryController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/supinfo/store/inventory/InventoryController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/supinfo/store/item/ItemController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/supinfo/store/item/ItemController.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -46,18 +48,38 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Class" />
+        <option value="Interface" />
       </list>
     </option>
   </component>
   <component name="Git.Settings">
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="stores" />
+      </map>
+    </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="GitHubPullRequestSearchHistory">{
+    &quot;lastFilter&quot;: {
+    &quot;state&quot;: &quot;OPEN&quot;,
+    &quot;assignee&quot;: &quot;Ferreira-Orlann&quot;
+    }
+    }</component>
+  <component name="GithubPullRequestsUISettings">
+    <option name="selectedUrlAndAccountId">
+      <UrlAndAccount>
+        <option name="accountId" value="aec1dd8f-6a86-4306-b5a2-bc4f66e844bd" />
+        <option name="url" value="https://github.com/Ferreira-Orlann/Supinfo-2JAVA.git" />
+      </UrlAndAccount>
+    </option>
   </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
   </component>
   <component name="ProjectColorInfo">{
-  &quot;associatedIndex&quot;: 5
-}</component>
+    &quot;associatedIndex&quot;: 5
+    }</component>
   <component name="ProjectId" id="2bVXsW9FP9c0YHkbtJhHQyVYtLV" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <ConfirmationsSetting value="2" id="Add" />
@@ -66,35 +88,35 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "ASKED_ADD_EXTERNAL_FILES": "true",
-    "Gradle.Supinfo-2JAVA [:JavaFX.main()].executor": "Run",
-    "Gradle.Supinfo-2JAVA [:Javafx.main()].executor": "Run",
-    "Gradle.Supinfo-2JAVA [:Loginpage.main()].executor": "Run",
-    "Gradle.Supinfo-2JAVA [:Main.main()].executor": "Run",
-    "Gradle.Supinfo-2JAVA [:Registerpage.main()].executor": "Run",
-    "Gradle.Supinfo-2JAVA [:javaFX.main()].executor": "Run",
-    "Gradle.Supinfo-2JAVA [:javafx.main()].executor": "Run",
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "UI_DESIGNER_EDITOR_MODE.PaletteManager.STATE": "left",
-    "UI_DESIGNER_EDITOR_MODE.UIDesignerToolWindowManager.STATE": "right",
-    "git-widget-placeholder": "javaFX",
-    "kotlin-language-version-configured": "true",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "settings.editor.selected.configurable": "reference.projectsettings.compiler.annotationProcessors",
-    "vue.rearranger.settings.migration": "true"
-  }
-}]]></component>
+  <component name="PropertiesComponent">{
+    &quot;keyToString&quot;: {
+    &quot;ASKED_ADD_EXTERNAL_FILES&quot;: &quot;true&quot;,
+    &quot;Gradle.Download Sources.executor&quot;: &quot;Run&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;stores&quot;,
+    &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
+    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;
+    }
+    }</component>
+  <component name="RunManager">
+    <configuration default="true" type="JetRunConfigurationType">
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="KotlinStandaloneScriptRunConfigurationType">
+      <option name="filePath" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+  </component>
   <component name="SharedIndexes">
     <attachedChunks>
       <set>
-        <option value="jdk-21.0.1-openjdk-21.0.1-f644763e9732-f98dd351" />
+        <option value="jdk-21.0.2-openjdk-21.0.2-4caba194b151-4f524021" />
       </set>
     </attachedChunks>
   </component>
@@ -106,14 +128,22 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1706301434169</updated>
-      <workItem from="1707120341527" duration="6181000" />
     </task>
+    <task id="LOCAL-00001" summary=":sparkles: Add Item, Inventory, Store with DataClass, Model and Controller">
+      <option name="closed" value="true" />
+      <created>1706961465616</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1706961465616</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
-  </component>
-  <component name="TypeScriptGeneratedFilesManager">
-    <option name="version" value="3" />
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
+    <MESSAGE value="Update gradle.yml" />
+    <MESSAGE value=":sparkles: Add Item, Inventory, Store with DataClass, Model and Controller" />
+    <option name="LAST_COMMIT_MESSAGE" value=":sparkles: Add Item, Inventory, Store with DataClass, Model and Controller" />
   </component>
 </project>

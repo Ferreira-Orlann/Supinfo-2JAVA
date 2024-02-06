@@ -8,8 +8,8 @@ import java.awt.event.ActionListener;
 
 public class Loginpage extends JFrame {
 
-    private JTextField usernameField;
-    private JPasswordField passwordField;
+    private final JTextField usernameField;
+    private final JPasswordField passwordField;
 
     public Loginpage() {
         super("Login Form");
