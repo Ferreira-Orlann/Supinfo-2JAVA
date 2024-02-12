@@ -27,6 +27,8 @@ dependencies {
 
     compileOnly("org.projectlombok:lombok:1.18.30")
     annotationProcessor("org.projectlombok:lombok:1.18.30")
+
+    implementation("org.owasp.encoder:encoder:1.2")
 }
 
 tasks.test {
