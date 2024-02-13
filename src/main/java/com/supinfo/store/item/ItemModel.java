@@ -23,9 +23,12 @@ public class ItemModel implements DataModel<Item> {
 
     @Override
     public Item create(Object... args) {
-        Item item = new Item((String) args[0], (int) args[1], UUID.randomUUID());
-        this.items.add(item);
-        return item;
+        return new Item((String) args[0], (int) args[1], UUID.randomUUID());
+    }
+
+    @Override
+    public boolean register(Item item) {
+        return this.items.add(item);
     }
 
     @Override
@@ -35,6 +38,9 @@ public class ItemModel implements DataModel<Item> {
 
     @Override
     public boolean update(Item item) {
+        Item loaded = this.load(item.getId());
+        this.delete(loaded);
+        this.register(item);
         return true;
     }
 }
