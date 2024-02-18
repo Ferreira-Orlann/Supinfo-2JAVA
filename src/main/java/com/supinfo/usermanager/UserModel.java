@@ -1,4 +1,4 @@
-package com.supinfo.userManager;
+package com.supinfo.usermanager;
 
 
 import javafx.scene.control.Alert;
@@ -6,19 +6,18 @@ import javafx.scene.control.Alert;
 import java.util.ArrayList;
 import java.util.List;
 
-public class UserManagement {
-    private List<User> users;
+public class UserModel {
+    private final List<User> users;
 
-    private int nextId;
     private User currentUser;
 
     //  private List<Store> stores;
 
     // private List<InventoryItem> inventoryItems;
 
-    public UserManagement() {
+    public UserModel() {
         users = new ArrayList<>();
-        nextId = 1;
+        int nextId = 1;
     }
 
     protected void createAccount(String email, String password) {
