@@ -5,14 +5,18 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="a269060a-8bca-425b-b9ff-7d5445c1d082" name="Changes" comment=":sparkles: Add Item, Inventory, Store with DataClass, Model and Controller">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/supinfo/common/even/DefaultEventProducer.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/supinfo/common/even/EventListener.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/supinfo/common/even/EventProducer.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/supinfo/store/inventory/InventoryEventListener.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/supinfo/store/item/ItemEventListener.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/supinfo/AdminManagementPage.form" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/supinfo/AdminManagementPage.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/supinfo/InventoryManagement.form" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/supinfo/InventoryManagement.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/supinfo/StoreManagement.form" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/supinfo/StoreManagement.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/supinfo/UserManagement.form" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/supinfo/UserManagement.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/supinfo/store/inventory/InventoryController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/supinfo/store/inventory/InventoryController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/supinfo/store/item/ItemController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/supinfo/store/item/ItemController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/supinfo/Loginpage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/supinfo/LoginPage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/supinfo/Registerpage.form" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/supinfo/RegisterPage.form" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/supinfo/Registerpage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/supinfo/RegisterPage.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -47,8 +51,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Class" />
         <option value="Interface" />
+        <option value="Class" />
       </list>
     </option>
   </component>
@@ -88,19 +92,80 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-    &quot;keyToString&quot;: {
-    &quot;ASKED_ADD_EXTERNAL_FILES&quot;: &quot;true&quot;,
-    &quot;Gradle.Download Sources.executor&quot;: &quot;Run&quot;,
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;stores&quot;,
-    &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
-    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;
-    }
-    }</component>
-  <component name="RunManager">
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "ASKED_ADD_EXTERNAL_FILES": "true",
+    "Application.AdminManagementPage.executor": "Run",
+    "Application.Unnamed (1).executor": "Run",
+    "Application.Unnamed (2).executor": "Run",
+    "Application.Unnamed (3).executor": "Run",
+    "Application.Unnamed.executor": "Run",
+    "Application.UserManagement.executor": "Run",
+    "Gradle.Build Supinfo-2JAVA.executor": "Run",
+    "Gradle.Download Sources.executor": "Run",
+    "Gradle.Supinfo-2JAVA [:AdminManagementPage.main()].executor": "Run",
+    "Gradle.Supinfo-2JAVA [:Loginpage.main()].executor": "Run",
+    "Gradle.Supinfo-2JAVA [:UserManagement.main()].executor": "Run",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "git-widget-placeholder": "javaFX",
+    "ignore.virus.scanning.warn.message": "true",
+    "kotlin-language-version-configured": "true",
+    "last_opened_file_path": "C:/javaFX15/lib",
+    "node.js.detected.package.eslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "project.structure.last.edited": "Libraries",
+    "project.structure.proportion": "0.15",
+    "project.structure.side.proportion": "0.2",
+    "settings.editor.selected.configurable": "preferences.pluginManager",
+    "vue.rearranger.settings.migration": "true"
+  }
+}]]></component>
+  <component name="RunManager" selected="Application.Unnamed (3)">
+    <configuration name="AdminManagementPage" type="Application" factoryName="Application">
+      <option name="MAIN_CLASS_NAME" value="com.supinfo.AdminManagementPage" />
+      <option name="VM_PARAMETERS" value="--module-path &quot;C:\javaFX15\lib&quot; --add-modules javafx.controls,javafx.fxml" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Unnamed (1)" type="Application" factoryName="Application" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.supinfo.RegisterPage" />
+      <option name="VM_PARAMETERS" value="--module-path &quot;C:\javaFX15\lib&quot; --add-modules javafx.controls,javafx.fxml" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Unnamed (2)" type="Application" factoryName="Application" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.supinfo.InventoryManagement" />
+      <option name="VM_PARAMETERS" value="--module-path &quot;C:\javaFX15\lib&quot; --add-modules javafx.controls,javafx.fxml" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Unnamed (3)" type="Application" factoryName="Application" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.supinfo.StoreManagement" />
+      <option name="VM_PARAMETERS" value="--module-path &quot;C:\javaFX15\lib&quot; --add-modules javafx.controls,javafx.fxml" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Unnamed" type="Application" factoryName="Application" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.supinfo.LoginPage" />
+      <option name="VM_PARAMETERS" value="--module-path &quot;C:\javaFX15\lib&quot; --add-modules javafx.controls,javafx.fxml" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="UserManagement" type="Application" factoryName="Application" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="UserManagement" />
+      <option name="VM_PARAMETERS" value="--module-path &quot;C:\javaFX15\lib&quot; --add-modules javafx.controls,javafx.fxml" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration default="true" type="JetRunConfigurationType">
       <method v="2">
         <option name="Make" enabled="true" />
@@ -112,11 +177,19 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <list>
+      <item itemvalue="Application.UserManagement" />
+      <item itemvalue="Application.Unnamed" />
+      <item itemvalue="Application.Unnamed (1)" />
+      <item itemvalue="Application.AdminManagementPage" />
+      <item itemvalue="Application.Unnamed (2)" />
+      <item itemvalue="Application.Unnamed (3)" />
+    </list>
   </component>
   <component name="SharedIndexes">
     <attachedChunks>
       <set>
-        <option value="jdk-21.0.2-openjdk-21.0.2-4caba194b151-4f524021" />
+        <option value="jdk-21.0.1-openjdk-21.0.1-f644763e9732-f98dd351" />
       </set>
     </attachedChunks>
   </component>
@@ -128,6 +201,8 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1706301434169</updated>
+      <workItem from="1707743309176" duration="1883000" />
+      <workItem from="1708251634760" duration="1098000" />
     </task>
     <task id="LOCAL-00001" summary=":sparkles: Add Item, Inventory, Store with DataClass, Model and Controller">
       <option name="closed" value="true" />
@@ -139,6 +214,9 @@
     </task>
     <option name="localTasksCounter" value="2" />
     <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
