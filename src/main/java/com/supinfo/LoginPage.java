@@ -47,6 +47,9 @@ public class LoginPage extends Application {
         Button loginButton = new Button("Login");
         Button registerButton = new Button("Register");
 
+        Label messageLabel = new Label();
+        grid.add(messageLabel, 0, 4);
+
         grid.add(loginButton, 0, 2);
         grid.add(registerButton, 1, 2);
 
