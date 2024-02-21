@@ -1,5 +1,6 @@
 package com.supinfo;
 
+import com.supinfo.usermanager.UserController;
 import javafx.application.Application;
 import javafx.geometry.Insets;
 import javafx.scene.Scene;
@@ -8,7 +9,7 @@ import javafx.scene.layout.VBox;
 import javafx.stage.Stage;
 
 public class Profile extends Application {
-    private UserManager userManager = new UserManager();
+    private UserController userController;
 
     public static void main(String[] args) {
         launch(args);
@@ -22,12 +23,12 @@ public class Profile extends Application {
         vbox.setPadding(new Insets(20, 50, 20, 50));
 
         Button profileButton = new Button("Voir mon Profil");
-        profileButton.setOnAction(e -> showProfile());
+        profileButton.setOnAction(e -> userController.listUsers());
 
-        Button button1 = new Button("Bouton 1");
-        Button button2 = new Button("Bouton 2");
 
-        vbox.getChildren().addAll(profileButton, button1, button2);
+
+
+        vbox.getChildren().addAll(profileButton);
 
         Scene scene = new Scene(vbox, 300, 200);
 
@@ -35,8 +36,8 @@ public class Profile extends Application {
         primaryStage.show();
     }
 
-    private void showProfile() {
-        String userProfile = userManager.getConnectedUserProfile();
+    /*private void showProfile() {
+        String userProfile = UserManager.getConnectedUserProfile();
 
         Stage profileStage = new Stage();
         profileStage.setTitle("Profil Utilisateur");
@@ -49,8 +50,9 @@ public class Profile extends Application {
         profileStage.show();
     }
     private static class UserManager {
-        public String getConnectedUserProfile() {
+        public static String getConnectedUserProfile() {
+            // Simuler la récupération du profil de l'utilisateur connecté
             return "Nom: John Doe\nEmail: john.doe@example.com";
         }
-    }
+    }*/
 }

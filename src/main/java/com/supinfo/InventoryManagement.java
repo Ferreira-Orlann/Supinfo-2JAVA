@@ -1,5 +1,7 @@
 package com.supinfo;
 
+import com.supinfo.store.item.ItemController;
+import com.supinfo.store.item.ItemModel;
 import javafx.application.Application;
 import javafx.beans.property.DoubleProperty;
 import javafx.beans.property.SimpleDoubleProperty;
@@ -20,7 +22,7 @@ import javafx.stage.Stage;
 
 
 public class InventoryManagement extends Application {
-
+    
     private ObservableList<Item> items;
     private TableView<Item> tableView;
 
