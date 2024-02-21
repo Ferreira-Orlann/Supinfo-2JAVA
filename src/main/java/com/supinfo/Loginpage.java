@@ -6,7 +6,7 @@ import java.awt.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 
-public class Loginpage extends JFrame {
+public class    Loginpage extends JFrame {
 
     private final JTextField usernameField;
     private final JPasswordField passwordField;
