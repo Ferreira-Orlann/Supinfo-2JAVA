@@ -1,5 +1,6 @@
 package com.supinfo.common;
 
+import java.sql.SQLException;
 import java.util.UUID;
 
 public interface DataModel<T> {

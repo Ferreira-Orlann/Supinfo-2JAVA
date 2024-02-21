@@ -1,12 +1,16 @@
 package com.supinfo.usermanager;
 
-import com.supinfo.common.even.DefaultEventProducer;
+import com.supinfo.common.event.DefaultEventProducer;
 import javafx.scene.control.Alert;
+import lombok.RequiredArgsConstructor;
+
+import java.util.UUID;
 
 
+@RequiredArgsConstructor
 public class UserController  extends DefaultEventProducer<UserEventListener>{
 
-    private UserModel userModel = new UserModel();
+    private final UserModel userModel;
 
     protected User currentUser;
 
@@ -37,7 +41,7 @@ public class UserController  extends DefaultEventProducer<UserEventListener>{
 
 
         if (isValidEmail(email) && isValidPassword(password)) {
-            User newUser = new User(nextId++,email, password, role);
+            User newUser = new User(UUID.randomUUID(),email, password, role);
             this.userModel.addUsers(newUser);
 
             showMessage("Account created successfully.");

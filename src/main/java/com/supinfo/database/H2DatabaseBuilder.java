@@ -13,12 +13,12 @@ import java.sql.SQLException;
 import java.util.HashMap;
 import java.util.Map;
 
-public record H2DatabaseBuilder(String URL, String user, String password) implements DatabaseConnectionBuilder {
+public record H2DatabaseBuilder(String path, String user, String password) implements DatabaseConnectionBuilder {
     @Override
     public Connection buildConnection() throws SQLException {
         Map<String, Object> config = new HashMap<>();
         config.put("liquibase.licenseKey", "YOUR_PRO_KEY");
-        Connection connection = DriverManager.getConnection(URL, user, password);
+        Connection connection = DriverManager.getConnection("jdbc:h2:" + path, user, password);
 
         try {
             Scope.child(config, () -> {

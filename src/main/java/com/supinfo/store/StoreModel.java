@@ -1,16 +1,20 @@
 package com.supinfo.store;
 
 import com.supinfo.common.DataModel;
+import com.supinfo.database.Database;
 import com.supinfo.store.inventory.Inventory;
 import com.supinfo.store.inventory.InventoryController;
 import lombok.AllArgsConstructor;
+import lombok.RequiredArgsConstructor;
 
 import java.util.ArrayList;
 import java.util.List;
 import java.util.UUID;
 
-@AllArgsConstructor
+@RequiredArgsConstructor
 public class StoreModel implements DataModel<Store>{
+    private final Database db;
+
     private final List<Store> stores = new ArrayList<>();
     private final InventoryController inventoryController;
 

@@ -3,6 +3,7 @@ package com.supinfo.store.item;
 import com.supinfo.common.event.DefaultEventProducer;
 import lombok.RequiredArgsConstructor;
 
+import java.sql.SQLException;
 import java.util.UUID;
 
 @RequiredArgsConstructor
@@ -31,14 +32,14 @@ public class ItemController extends DefaultEventProducer<ItemEventListener> {
         return newItem;
     }
 
-    public Item create(String name, int price) {
+    public Item create(String name, int price) throws SQLException {
         Item newItem = model.create(name, price, UUID.randomUUID());
         model.register(newItem);
         this.getListeners().forEach(listener -> listener.onItemCreated(newItem));
         return newItem;
     }
 
-    public void delete(Item item) {
+    public void delete(Item item) throws SQLException {
         this.model.delete(item);
         this.getListeners().forEach(listener -> listener.onItemDeleted(item));
     }

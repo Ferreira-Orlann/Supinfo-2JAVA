@@ -7,16 +7,21 @@ import java.sql.PreparedStatement;
 import java.sql.SQLException;
 
 @Getter
-public class Database {
+public class Database implements AutoCloseable {
     private final Connection conn;
     private final DatabaseConnectionBuilder connBuilder;
 
-    Database(DatabaseConnectionBuilder connBuilder) throws SQLException {
+    public Database(DatabaseConnectionBuilder connBuilder) throws SQLException {
         this.connBuilder = connBuilder;
         this.conn = connBuilder.buildConnection();
     }
 
-    public PreparedStatement query(String query, Object... data) throws SQLException {
+    public PreparedStatement query(String query) throws SQLException {
         return this.conn.prepareStatement(query);
+    }
+
+    @Override
+    public void close() throws Exception {
+        this.conn.close();
     }
 }
