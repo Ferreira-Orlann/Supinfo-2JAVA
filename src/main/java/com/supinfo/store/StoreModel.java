@@ -1,16 +1,20 @@
 package com.supinfo.store;
 
 import com.supinfo.common.DataModel;
+import com.supinfo.database.Database;
 import com.supinfo.store.inventory.Inventory;
 import com.supinfo.store.inventory.InventoryController;
 import lombok.AllArgsConstructor;
+import lombok.RequiredArgsConstructor;
 
 import java.util.ArrayList;
 import java.util.List;
 import java.util.UUID;
 
-@AllArgsConstructor
-public class StoreModel implements DataModel<Store> {
+@RequiredArgsConstructor
+public class StoreModel implements DataModel<Store>{
+    private final Database db;
+
     private final List<Store> stores = new ArrayList<>();
     private final InventoryController inventoryController;
 
@@ -28,9 +32,12 @@ public class StoreModel implements DataModel<Store> {
 
     @Override
     public Store create(Object... args) {
-        Store store = new Store((Inventory) args[0], (String) args[1], (UUID) args[2]);
-        this.stores.add(store);
-        return store;
+        return new Store((Inventory) args[0], (String) args[1], (UUID) args[2]);
+    }
+
+    @Override
+    public boolean register(Store store) {
+        return this.stores.add(store);
     }
 
     @Override
@@ -40,6 +47,9 @@ public class StoreModel implements DataModel<Store> {
 
     @Override
     public boolean update(Store store) {
-        return false;
+        Store loaded = this.load(store.getId());
+        this.delete(loaded);
+        this.register(store);
+        return true;
     }
 }
