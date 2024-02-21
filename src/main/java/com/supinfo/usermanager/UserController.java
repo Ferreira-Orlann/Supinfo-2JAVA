@@ -1,27 +1,18 @@
-package com.supinfo.userManager;
+package com.supinfo.usermanager;
 
-
+import com.supinfo.common.even.DefaultEventProducer;
 import javafx.scene.control.Alert;
 
-import java.util.ArrayList;
-import java.util.List;
 
-public class UserManagement {
-    private List<User> users;
+public class UserController  extends DefaultEventProducer<UserEventListener>{
 
-    private int nextId;
-    private User currentUser;
+    private UserModel userModel = new UserModel();
 
-    //  private List<Store> stores;
+    protected User currentUser;
 
-    // private List<InventoryItem> inventoryItems;
+    int nextId = 0;
 
-    public UserManagement() {
-        users = new ArrayList<>();
-        nextId = 1;
-    }
-
-    protected void createAccount(String email, String password) {
+    public void createAccount(String email, String password) {
 
         String role ;
 
@@ -33,7 +24,7 @@ public class UserManagement {
             return;
         }
 
-        if (users.isEmpty()) {
+        if (userModel.users.isEmpty()) {
             role = "admin";
         }else {
             role = "user";
@@ -46,20 +37,18 @@ public class UserManagement {
 
 
         if (isValidEmail(email) && isValidPassword(password)) {
-            User newUser = new User(email, password, role);
-            users.add(newUser);
+            User newUser = new User(nextId++,email, password, role);
+            this.userModel.addUsers(newUser);
+
             showMessage("Account created successfully.");
 
         } else {
             showMessage("Invalid email,password");
         }
 
-
-
     }
 
-
-    protected void login(String email, String password) {
+    public void login(String email, String password) {
 
 
         if (email.isEmpty() || password.isEmpty()) {
@@ -85,7 +74,7 @@ public class UserManagement {
     }
 
     protected User getUserByEmail(String login) {
-        for (User user : users) {
+        for (User user : userModel.users) {
             if (user.getEmail().equals(login)) {
                 return user;
             }
@@ -100,7 +89,7 @@ public class UserManagement {
         return currentUser != null && currentUser.getRole().equalsIgnoreCase("admin");
     }
 
-    protected void deleteUser() {
+    public void deleteUser() {
 
         if (currentUser == null) {
             showMessage("No user selected.");
@@ -112,12 +101,12 @@ public class UserManagement {
             return;
         }
 
-        users.remove(currentUser);
+        this.userModel.removeUsers(currentUser);
         showMessage("User deleted successfully.");
 
     }
 
-    protected void updateUser(String pseudo, String password) {
+    public void updateUser(String pseudo, String password) {
         if (currentUser == null) {
             showMessage("No user selected.");
             return;
@@ -130,13 +119,14 @@ public class UserManagement {
 
         currentUser.setPseudo(pseudo);
         currentUser.setPassword(password);
+
         showMessage("User updated successfully.");
     }
 
-    protected void listUsers() {
+    public void listUsers() {
         StringBuilder sb = new StringBuilder();
 
-        for (User user : users) {
+        for (User user : userModel.users) {
             sb.append(user.getId()).append(": ").append(user.getEmail()).append(" (").append(user.getRole()).append(")\n");
             if (isCurrentUserAdmin()) {
                 sb.append("Password: ").append(user.getPassword()).append("\n");
@@ -149,39 +139,7 @@ public class UserManagement {
         alert.showAndWait();
     }
 
-    private void createStore() {
-        if (currentUser == null) {
-            showMessage("No user selected.");
-            return;
-        }
 
-        if (!isCurrentUserAdmin()) {
-            showMessage("You do not have permission to create store.");
-            return;
-        }
-
-
-        //  Store newStore = new Store();
-        //  stores.add(newStore);
-        showMessage("Store created successfully.");
-
-    }
-
-    private void createInventoryItem() {
-        if (currentUser == null) {
-            showMessage("No user selected.");
-            return;
-        }
-
-        if (!isCurrentUserAdmin()) {
-            showMessage("You do not have permission to create store.");
-            return;
-        }
-        // InventoryItem newInventoryItem = new InventoryItem();
-        //  inventoryItems.add(newInventoryItem);
-        showMessage("Inventory item created successfully.");
-
-    }
 
 
     protected boolean isValidEmail(String email) {
@@ -194,20 +152,7 @@ public class UserManagement {
         return  password.length() >= 8 && password.length() <= 32 ;
     }
 
-
-
     protected void showMessage(String message) {
-        //messageLabel.setText(message);
+        System.out.println(message);
     }
-
-   /* private void clearForm() {
-        emailField.clear();
-        pseudoField.clear();
-        passwordField.clear();
-        roleField.clear();
-        currentUser = null;
-        showMessage("");
-    }*/
 }
-
-
