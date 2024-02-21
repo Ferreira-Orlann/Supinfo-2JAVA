@@ -5,23 +5,20 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="a269060a-8bca-425b-b9ff-7d5445c1d082" name="Changes" comment=":supervillain: Add Event Support for Store, Inventory and Item">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/supinfo/common/event/EventListener.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/supinfo/Loginpage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/supinfo/Loginpage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/supinfo/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/supinfo/Main.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/supinfo/common/DataModel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/supinfo/common/DataModel.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/supinfo/common/even/DefaultEventProducer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/supinfo/common/event/DefaultEventProducer.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/supinfo/common/even/EventListener.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/supinfo/common/even/EventProducer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/supinfo/common/event/EventProducer.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/supinfo/store/StoreController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/supinfo/store/StoreController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/supinfo/store/StoreEventListener.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/supinfo/store/StoreEventListener.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/supinfo/database/Database.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/supinfo/database/Database.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/supinfo/database/H2DatabaseBuilder.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/supinfo/database/H2DatabaseBuilder.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/supinfo/store/StoreModel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/supinfo/store/StoreModel.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/supinfo/store/inventory/Inventory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/supinfo/store/inventory/Inventory.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/supinfo/store/inventory/InventoryController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/supinfo/store/inventory/InventoryController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/supinfo/store/inventory/InventoryEventListener.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/supinfo/store/inventory/InventoryEventListener.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/supinfo/store/inventory/InventoryModel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/supinfo/store/inventory/InventoryModel.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/supinfo/store/item/ItemController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/supinfo/store/item/ItemController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/supinfo/store/item/ItemEventListener.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/supinfo/store/item/ItemEventListener.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/supinfo/store/item/ItemModel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/supinfo/store/item/ItemModel.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/supinfo/usermanager/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/supinfo/usermanager/User.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/supinfo/usermanager/UserController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/supinfo/usermanager/UserController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/supinfo/usermanager/UserEventListener.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/supinfo/usermanager/UserEventListener.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/supinfo/usermanager/UserModel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/supinfo/usermanager/UserModel.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/changelog.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/changelog.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -67,16 +64,15 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Interface" />
-        <option value="JavaFXApplication" />
         <option value="Class" />
+        <option value="Interface" />
       </list>
     </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
-        <entry key="$PROJECT_DIR$" value="userManager" />
+        <entry key="$PROJECT_DIR$" value="stores" />
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -98,12 +94,6 @@
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
   </component>
-  <component name="ProblemsViewState">
-    <option name="selectedTabId" value="ProjectErrors" />
-  </component>
-  <component name="ProjectCodeStyleSettingsMigration">
-    <option name="version" value="2" />
-  </component>
   <component name="ProjectColorInfo">{
   &quot;associatedIndex&quot;: 5
 }</component>
@@ -115,25 +105,25 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;ASKED_ADD_EXTERNAL_FILES&quot;: &quot;true&quot;,
-    &quot;Downloaded.Files.Path.Enabled&quot;: &quot;false&quot;,
-    &quot;Gradle.Download Sources.executor&quot;: &quot;Run&quot;,
-    &quot;Gradle.Supinfo-2JAVA [:Loginpage.main()].executor&quot;: &quot;Run&quot;,
-    &quot;Gradle.Supinfo-2JAVA [:Main.main()].executor&quot;: &quot;Run&quot;,
-    &quot;Gradle.Supinfo-2JAVA [test].executor&quot;: &quot;Run&quot;,
-    &quot;Repository.Attach.Annotations&quot;: &quot;false&quot;,
-    &quot;Repository.Attach.JavaDocs&quot;: &quot;false&quot;,
-    &quot;Repository.Attach.Sources&quot;: &quot;false&quot;,
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;stores&quot;,
-    &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
-    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "ASKED_ADD_EXTERNAL_FILES": "true",
+    "Downloaded.Files.Path.Enabled": "false",
+    "Gradle.Download Sources.executor": "Run",
+    "Gradle.Supinfo-2JAVA [:Loginpage.main()].executor": "Run",
+    "Gradle.Supinfo-2JAVA [:Main.main()].executor": "Run",
+    "Gradle.Supinfo-2JAVA [test].executor": "Run",
+    "Repository.Attach.Annotations": "false",
+    "Repository.Attach.JavaDocs": "false",
+    "Repository.Attach.Sources": "false",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "git-widget-placeholder": "database",
+    "ignore.virus.scanning.warn.message": "true",
+    "kotlin-language-version-configured": "true",
+    "settings.editor.selected.configurable": "preferences.pluginManager"
   }
-}</component>
+}]]></component>
   <component name="RunManager">
     <configuration name="Supinfo-2JAVA [test]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
@@ -177,7 +167,6 @@
   <component name="SharedIndexes">
     <attachedChunks>
       <set>
-        <option value="jdk-21.0.1-openjdk-21.0.1-f644763e9732-f98dd351" />
         <option value="jdk-21.0.2-openjdk-21.0.2-4caba194b151-4f524021" />
       </set>
     </attachedChunks>
@@ -199,45 +188,13 @@
       <option name="project" value="LOCAL" />
       <updated>1706961465616</updated>
     </task>
-    <task id="LOCAL-00002" summary=":sparkles: Add User and UserManagement">
-      <option name="closed" value="true" />
-      <created>1707741998793</created>
-      <option name="number" value="00002" />
-      <option name="presentableId" value="LOCAL-00002" />
-      <option name="project" value="LOCAL" />
-      <updated>1707741998793</updated>
-    </task>
-    <option name="localTasksCounter" value="3" />
+    <option name="localTasksCounter" value="2" />
     <servers />
-  </component>
-  <component name="Vcs.Log.Tabs.Properties">
-    <option name="TAB_STATES">
-      <map>
-        <entry key="MAIN">
-          <value>
-            <State>
-              <option name="FILTERS">
-                <map>
-                  <entry key="branch">
-                    <value>
-                      <list>
-                        <option value="origin/userManager" />
-                      </list>
-                    </value>
-                  </entry>
-                </map>
-              </option>
-            </State>
-          </value>
-        </entry>
-      </map>
-    </option>
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
     <MESSAGE value="Update gradle.yml" />
     <MESSAGE value=":sparkles: Add Item, Inventory, Store with DataClass, Model and Controller" />
-    <MESSAGE value=":sparkles: Add User and UserManagement" />
-    <option name="LAST_COMMIT_MESSAGE" value=":sparkles: Add User and UserManagement" />
+    <option name="LAST_COMMIT_MESSAGE" value=":sparkles: Add Item, Inventory, Store with DataClass, Model and Controller" />
   </component>
 </project>
