@@ -5,35 +5,14 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="a269060a-8bca-425b-b9ff-7d5445c1d082" name="Changes" comment=":sparkles: Add Item, Inventory, Store with DataClass, Model and Controller">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/supinfo/common/event/EventListener.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/supinfo/database/Database.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/supinfo/database/DatabaseConnectionBuilder.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/supinfo/database/H2DatabaseBuilder.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/supinfo/store/StoreT.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/supinfo/usermanager/User.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/supinfo/usermanager/UserController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/supinfo/usermanager/UserEventListener.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/supinfo/usermanager/UserModel.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/changelog.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build.gradle.kts" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle.kts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/supinfo/InventoryManagement.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/supinfo/InventoryManagement.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/supinfo/LoginPage.form" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/supinfo/LoginPage.form" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/supinfo/LoginPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/supinfo/LoginPage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/supinfo/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/supinfo/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/supinfo/common/DataModel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/supinfo/common/DataModel.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/supinfo/common/even/DefaultEventProducer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/supinfo/common/event/DefaultEventProducer.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/supinfo/common/even/EventListener.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/supinfo/common/even/EventProducer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/supinfo/common/event/EventProducer.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/supinfo/store/Store.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/supinfo/store/Store.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/supinfo/store/StoreController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/supinfo/store/StoreController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/supinfo/store/StoreEventListener.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/supinfo/store/StoreEventListener.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/supinfo/store/StoreModel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/supinfo/store/StoreModel.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/supinfo/store/inventory/Inventory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/supinfo/store/inventory/Inventory.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/supinfo/store/inventory/InventoryController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/supinfo/store/inventory/InventoryController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/supinfo/store/inventory/InventoryEventListener.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/supinfo/store/inventory/InventoryEventListener.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/supinfo/store/inventory/InventoryModel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/supinfo/store/inventory/InventoryModel.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/supinfo/store/item/ItemController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/supinfo/store/item/ItemController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/supinfo/store/item/ItemEventListener.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/supinfo/store/item/ItemEventListener.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/supinfo/store/item/ItemModel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/supinfo/store/item/ItemModel.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/supinfo/Loginpage.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/supinfo/Profile.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/supinfo/Profile.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/supinfo/RegisterPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/supinfo/RegisterPage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/supinfo/usermanager/UserController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/supinfo/usermanager/UserController.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -114,6 +93,7 @@
     "ASKED_ADD_EXTERNAL_FILES": "true",
     "Application.AdminManagementPage.executor": "Run",
     "Application.Home.executor": "Run",
+    "Application.InventoryManagement.executor": "Run",
     "Application.Login.executor": "Run",
     "Application.Profile.executor": "Run",
     "Application.Unnamed (1).executor": "Run",
@@ -129,7 +109,7 @@
     "Gradle.Supinfo-2JAVA [:UserManagement.main()].executor": "Run",
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
-    "git-widget-placeholder": "Merging javaFX",
+    "git-widget-placeholder": "javaFX",
     "ignore.virus.scanning.warn.message": "true",
     "kotlin-language-version-configured": "true",
     "last_opened_file_path": "C:/javaFX15/lib",
@@ -144,7 +124,7 @@
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
-  <component name="RunManager" selected="Application.Login">
+  <component name="RunManager" selected="Application.AdminManagementPage">
     <configuration name="AdminManagementPage" type="Application" factoryName="Application">
       <option name="MAIN_CLASS_NAME" value="com.supinfo.AdminManagementPage" />
       <option name="VM_PARAMETERS" value="--module-path &quot;C:\javaFX15\lib&quot; --add-modules javafx.controls,javafx.fxml" />
@@ -154,6 +134,13 @@
     </configuration>
     <configuration name="Home" type="Application" factoryName="Application">
       <option name="MAIN_CLASS_NAME" value="com.supinfo.Home" />
+      <option name="VM_PARAMETERS" value="--module-path &quot;C:\javaFX15\lib&quot; --add-modules javafx.controls,javafx.fxml" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="InventoryManagement" type="Application" factoryName="Application">
+      <option name="MAIN_CLASS_NAME" value="com.supinfo.InventoryManagement" />
       <option name="VM_PARAMETERS" value="--module-path &quot;C:\javaFX15\lib&quot; --add-modules javafx.controls,javafx.fxml" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -175,13 +162,6 @@
     </configuration>
     <configuration name="Register" type="Application" factoryName="Application">
       <option name="MAIN_CLASS_NAME" value="com.supinfo.RegisterPage" />
-      <option name="VM_PARAMETERS" value="--module-path &quot;C:\javaFX15\lib&quot; --add-modules javafx.controls,javafx.fxml" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="Unnamed (2)" type="Application" factoryName="Application" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.supinfo.InventoryManagement" />
       <option name="VM_PARAMETERS" value="--module-path &quot;C:\javaFX15\lib&quot; --add-modules javafx.controls,javafx.fxml" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -217,7 +197,7 @@
       <item itemvalue="Application.Login" />
       <item itemvalue="Application.Register" />
       <item itemvalue="Application.AdminManagementPage" />
-      <item itemvalue="Application.Unnamed (2)" />
+      <item itemvalue="Application.InventoryManagement" />
       <item itemvalue="Application.Home" />
       <item itemvalue="Application.Profile" />
       <item itemvalue="Application.Unnamed (3)" />

@@ -1,5 +1,6 @@
 package com.supinfo.usermanager;
 
+import com.supinfo.RegisterPage;
 import com.supinfo.common.event.DefaultEventProducer;
 import javafx.scene.control.Alert;
 import lombok.RequiredArgsConstructor;
@@ -11,7 +12,7 @@ import java.util.UUID;
 public class UserController  extends DefaultEventProducer<UserEventListener>{
 
     private final UserModel userModel;
-
+    private RegisterPage register;
     protected User currentUser;
 
     int nextId = 0;

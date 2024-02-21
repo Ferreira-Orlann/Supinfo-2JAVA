@@ -1,5 +1,7 @@
 package com.supinfo;
 
+import com.supinfo.usermanager.UserController;
+import com.supinfo.usermanager.UserModel;
 import javafx.application.Application;
 import javafx.event.ActionEvent;
 import javafx.event.EventHandler;
@@ -14,8 +16,13 @@ import javafx.stage.Stage;
 
 public class RegisterPage extends Application {
 
+    private UserModel userModel;
+    private UserController userController;
     private TextField newUsernameField;
     private PasswordField newPasswordField;
+    public String newlabel;
+    public String newmessage;
+
 
     public static void main(String[] args) {
         launch(args);
@@ -48,7 +55,7 @@ public class RegisterPage extends Application {
                 String newUsername = newUsernameField.getText();
                 String newPassword = newPasswordField.getText();
 
-                System.out.println("User registered successfully!");
+                userController.createAccount(newUsername, newPassword);
 
                 primaryStage.close();
             }
@@ -58,5 +65,10 @@ public class RegisterPage extends Application {
 
         primaryStage.setScene(scene);
         primaryStage.show();
+
+    }
+
+    public void newmessage(String message) {
+        newmessage = message;
     }
 }
